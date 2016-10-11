@@ -12,8 +12,9 @@ var app = {
     initialize: function() {
         var self = this;
         this.store = new MemoryStore(function() {
-           self.renderHomeView();
+            $('body').html(new HomeView(self.store).render().el);
         });
+
         this.homeTpl = Handlebars.compile($("#home-tpl").html());
         this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
