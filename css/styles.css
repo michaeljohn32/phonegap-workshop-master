@@ -169,6 +169,11 @@ li>a * {
 
 }
 
+li>a.tappable-active {
+    color: #fff;
+    background-color: #4286f5;
+}
+
 h1 {
     font-size: 18px;
     padding: 20 0 0 0;
@@ -197,3 +202,5 @@ h2 {
     left: 0px;
     right: 0px;
 }
+
+
